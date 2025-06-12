@@ -9,7 +9,7 @@ st.title("Prediksi Dropout Mahasiswa & Rekomendasi Tindakan")
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data.csv", delimiter=';')
+    df = pd.read_csv("data/data.csv", delimiter=';')
     drop_cols = ['Unemployment_rate', 'Inflation_rate', 'GDP',
                  'Curricular_units_1st_sem_credited', 'Curricular_units_2nd_sem_credited',
                  'Curricular_units_1st_sem_without_evaluations', 'Curricular_units_2nd_sem_without_evaluations']
